@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+
+}
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav {
+    width: 60%;
+}
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 25px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+li:hover {
+    color: #d21617;
+
+}
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro' sans-serif;
+}
+.footer-navigation {
+    display: none;
+
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    width: 350px;
+    height: auto;
+    
+}
+
+.cards-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.card {
+    width: 70%;
+    height: 350px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+.banner1 {
+    background-image: url('https://cdn.vox-cdn.com/thumbor/6DmXVj6fHQfKonZgaS-m1f6pVRM=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/24955061/RE4_Separate_Ways_Ada_Wong_png_jpgcopy.jpg');
+}
+.banner2 {
+    background-image: url('https://evilhazard.com.br/wp-content/uploads/2023/03/adamaxresdefault.jpg');
+}
+.banner3 {
+    background-image: url('https://sm.ign.com/ign_br/screenshot/default/resident-evil-4-5-900x503_zjfa.jpg');
+}
+.banner4 {
+    background-image: url('https://pics.computerbase.de/1/0/9/3/9/3-a465bf14ed8ca8aa/article-1280x720.d27480f2.jpg');
+}
+.banner5 {
+    background-image: url('https://cdn.vox-cdn.com/thumbor/shRpC04i0WDHqMA39mEhDSz60xc=/0x0:1600x900/1200x675/filters:focal(672x322:928x578)/cdn.vox-cdn.com/uploads/chorus_image/image/72199264/ada_wong.0.jpg');
+    
+}
+.banner6 {
+    background-image: url('https://i.pinimg.com/736x/28/ff/3a/28ff3a780f96c9a1616415de49b65642.jpg');
+    
+}
+@media (max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }   
+    
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+        
+    }
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    
+}

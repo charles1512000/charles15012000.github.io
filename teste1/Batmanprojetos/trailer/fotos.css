@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+
+}
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 25px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro' sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    width: 350px;
+    height: auto;
+    
+}
+.cards-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.card {
+    width: 70%;
+    height: 350px;
+    background-size: cover;
+    background-position: 60% 60%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 100px 50px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.banner-1 {
+    background-image: url('https://i.ebayimg.com/images/g/uroAAOSwn3lkNQq4/s-l1200.jpg');
+}
+.banner-2 {
+    background-image: url('https://www.texasjackets.com/wp-content/uploads/2023/02/Resident-Evil-4-Remake-Leon-Kennedy-Leather-Jacket.jpg');
+}
+
+.banner-3 {
+    background-image: url('https://p2.trrsf.com.br/image/fget/cf/540/960/smart/images.terra.com/2023/03/17/re4-leon-casaco-uvgysgcfs76t.jpg');
+}
+.banner-4 {
+    background-image: url('https://f.i.uol.com.br/fotografia/2023/03/24/1679713141641e6375a1c3c_1679713141_3x2_md.jpg');
+}
+.banner-5 {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8a82aad2-55cc-4b43-82f4-9534a386ef3d/dfrhswz-7deece86-4bd7-46f3-8ccc-f5ec87eba8e8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhhODJhYWQyLTU1Y2MtNGI0My04MmY0LTk1MzRhMzg2ZWYzZFwvZGZyaHN3ei03ZGVlY2U4Ni00YmQ3LTQ2ZjMtOGNjYy1mNWVjODdlYmE4ZTgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Rx9Bicl5LNgujL1DPI_OAuryKRVIYTDREqkm4a8e_cc');
+}
+.banner-6 {
+    background-image: url('https://jornaldosjogos.com.br/wp-content/uploads/2023/04/re4-remake-dlss.jpg');
+}
+.banner-7 {
+    background-image: url('https://sm.ign.com/ign_br/news/r/resident-e/resident-evil-4-gold-edition-arrives-next-week_pazt.jpg');
+}
+.banner-8 {
+    background-image: url('https://www.residentevildatabase.com/wp-content/uploads/2023/01/resident-evil-4-remake-leon-1.jpg');
+}
+.banner-9 {
+    background-image: url('https://www.residentevildatabase.com/wp-content/uploads/2023/02/RE4_Leon-scaled.jpg');
+}
+.banner-10 {
+    background-image: url('https://i.pinimg.com/736x/08/94/37/089437149b324f5719f91cb8561d3d79.jpg');
+}
+
+@media (max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }   
+    
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+        
+    }
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    
+}

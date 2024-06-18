@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+
+}
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav {
+    width: 60%;
+}
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 25px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+li:hover {
+    color: #d21617;
+
+}
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro' sans-serif;
+}
+.footer-navigation {
+    display: none;
+
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    width: 350px;
+    height: auto;
+    
+}
+
+
+.cards-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.card {
+    width: 70%;
+    height: 350px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+.banner1 {
+    background-image: url('https://imgix.bustle.com/uploads/image/2023/3/23/0a07a8d0-a8eb-4d67-b54d-70c96ac54cdc-re4_ashley_png_jpgcopy.jpg');
+}
+.banner2 {
+    background-image: url('https://cdn.mos.cms.futurecdn.net/YDGSTdqDv3WvFPViaTi5ca.jpg');
+}
+.banner3 {
+    background-image: url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/04/resident-evil-4-remake-ashley-2.jpg');
+}
+.banner4 {
+    background-image: url('https://i.ytimg.com/vi/-0yAPfeJDNo/maxresdefault.jpg');
+}
+.banner5 {
+    background-image: url('https://i.pinimg.com/736x/f3/7e/7c/f37e7cbe9e6a1cb37d0583983fcc82af.jpg');
+}
+.banner6 {
+    background-image: url('https://media.thenerdstash.com/wp-content/uploads/2023/03/Resident-Evil-4-Remake-Can-You-Play-as-Ashley-Graham-1024x576.jpg');
+}
+@media (max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }   
+    
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+        
+    }
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    
+}
+

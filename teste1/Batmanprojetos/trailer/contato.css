@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+body{
+    background-color: black;
+}
+
+header {
+    height: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+nav {
+    width: 60%;
+
+}
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+#logo {
+    width: 400px;
+    height: auto;
+    
+}
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 5px;
+    background-image: url("https://images.wallpapersden.com/image/download/resident-evil-4-remake-poster-cool_bW5qa2eUmZqaraWkpJRoaGllrWdma2U.jpg");
+    background-size: cover;
+  }
+
+#password {
+    margin-top: 30px;
+    padding: 10px;
+    font-family: "kdam Thmor Pro", sans-serif;
+    background-color: rgb(255, 254, 254);
+    width: 400px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-bottom: 30px;
+  }
+  #email {
+    margin-top: 30px;
+    padding: 10px;
+    font-family: "kdam Thmor Pro", sans-serif;
+    background-color: rgb(255, 254, 254);
+    width: 400px;
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+  #number {
+    margin-top: 30px;
+    padding: 10px;
+    font-family: "kdam Thmor Pro", sans-serif;
+    background-color: rgb(255, 254, 254);
+    width: 400px;
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+  #date {
+    margin-top: 30px;
+    padding: 10px;
+    font-family: "kdam Thmor Pro", sans-serif;
+    background-color: rgb(255, 254, 254);
+    width: 400px;
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+  textarea {
+    margin-top: 30px;
+    font-family: "kdam Thmor Pro", sans-serif;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 400px;
+    height: 250px;
+  }
+  p{
+    font-family: "kdam Thmor Pro", sans-serif;
+    color: white;
+    width: 250px;
+    border-radius: 5px;
+
+  }
+  h1 {
+    color: #fff;
+    font-size: 35px;
+    font-family: "kdam Thmor Pro", sans-serif;
+    width: 70%;
+  }
+  #radio {
+    margin-top: 10px;
+    padding: 10px;
+    font-family: "kdam Thmor Pro", sans-serif;
+    background-color: rgb(255, 254, 254);
+
+  }
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    
+}
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro' sans-serif;
+}
+
+
+.footer-navigation {
+    display: none;
+
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }   
+    
+    nav {
+        display: none;
+    }
+    .container{
+        background-position: 90%;
+        
+        width: 450px;
+        height: auto;
+    }
+    #logo {
+        width: 250px;
+        height: auto;
+    
+    }
+    #password{
+        width: 75%;
+    }
+    #email{
+        width: 75%;
+    }
+    #number{
+        width: 75%;
+    }
+    #date{
+        width: 75%;
+    }
+    textarea{
+        width: 250px;
+        height: 200px;
+    }
+
+
+
+    
+}
